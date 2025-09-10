@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somador</title>
+    <script>
+        function somar() {
+           const n1 = document.getElementById("n1").value 
+           const n2 = document.getElementById("n2").value
+
+           const soma = Number(n1) + Number(n2)
+           alert("A soma é: " + soma)
+
+        }
+    </script>
+</head>
+<body>
+
+    <form>
+        N1: <input type="text" id="n1"/><br>
+        N2: <input type="text" id="n2"/><br>
+        <input type="button" value="Somar" onclick="somar()">
+    </form>
+    
+</body>
+</html>
