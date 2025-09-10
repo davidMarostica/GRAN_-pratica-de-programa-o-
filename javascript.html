@@ -4,6 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>javascript</title>
+
+    <script>
+        // string
+        const nome = prompt("Por favor, digite seu nome")
+
+        const n1 = 10
+        const n2 = 7
+        const aprovado = true
+        const minimo = 9 
+        
+        //operadores aritméticos
+
+        console.log('Operadores Aritméticos')
+        console.log(n1 + n2)
+        console.log(n1 - n2)
+        console.log(n1 * n2)
+        console.log(n1 / n2)
+        console.log(n1 % n2) 
+
+        //operadores relacionais
+        console.log('Operadores Relacionais')
+        console.log(n1 > n2) // maior
+        console.log(n1 < n2) // menor
+        console.log(n1 >= n2) // maior ou igual
+        console.log(n1 <= n2) // menor ou igual
+        console.log(n1 == n2) // igual
+        console.log(n1 != n2) // diferente  
+
+        //operadores lógicos
+        console.log('Operadores Lógicos')
+        console.log(aprovado && n1 > n2) // e
+        console.log(aprovado || n1 < n2) // ou
+        console.log(!aprovado) // não   
+        console.log( n2 >= 7 && n2 >= minimo) // e
+        console.log( n2 >= 7 || n2 >= minimo) // ou
+        console.log( !(n2 >= minimo)) // não    
+        
+        //interpolação
+        console.log(`Seja bem vindo ${nome}`)
+        console.log(`Sua nota 1 é ${n1}`)
+        console.log(`Sua nota 2 é ${n2}`)
+        console.log(`Sua média é ${(n1 + n2) / 2}`)
+        console.log(`Você está aprovado? ${aprovado}`)
+
+    </script>
 </head>
 <body>
     
