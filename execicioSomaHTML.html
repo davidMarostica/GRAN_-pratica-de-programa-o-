@@ -10,8 +10,10 @@
            const n2 = document.getElementById("n2").value
 
            const soma = Number(n1) + Number(n2)
-           alert("A soma é: " + soma)
 
+              document.getElementById("resultado").innerHTML = "A soma dos numeros é " + soma + "."
+
+         
         }
     </script>
 </head>
@@ -20,8 +22,11 @@
     <form>
         N1: <input type="text" id="n1"/><br>
         N2: <input type="text" id="n2"/><br>
-        <input type="button" value="Somar" onclick="somar()">
+
+            <input type="button" value="Somar" onclick="somar()">
+            
+        <h1 id = "resultado">A soma dos numeros é .</h1>
     </form>
-    
+
 </body>
 </html>
