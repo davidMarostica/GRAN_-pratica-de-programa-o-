@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrutura de Repetição</title>
+</head>
+<body>
+<script>
+    let contador = 1;
+    const qtd = Number(prompt('Quantas vezes esse loop deve rodar?'));
+    let soma = 0;
+    let notas = [];
+
+    while(contador <= qtd){
+
+        let nota; // declara a variável antes do loop
+
+        do{
+            nota = Number(prompt('Digite a nota ' + contador + ': '));
+
+        }while(nota < 0 || nota > 10 )
+        
+        notas.push(nota);
+        soma += nota;
+        contador++;
+    }
+
+    console.log('Notas: ' + notas.join(', '));
+    console.log('Soma das notas: ' + soma);
+
+    const media = soma / qtd;
+    console.log('Média final: ' + media.toFixed(2));
+
+    const resultado = media >= 7 ? 'Aprovado' : 'Reprovado';
+    console.log('Resultado: ' + resultado);
+</script>
+</body>
+</html>
