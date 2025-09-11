@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas e Média</title>
+    <script>
+        const qtd = Number(prompt('Quantas notas você quer informar?'));
+        let soma = 0;
+        let notas = [];
+
+        for(let i = 1; i <= qtd; i++){
+            let nota = Number(prompt('Digite a nota ' + i + ':'));
+            soma += nota;
+            notas.push(nota);
+        }
+
+        const media = soma / qtd;
+
+        // Mostra todas as notas e a média na página
+        document.write('<h2>Notas Digitadas:</h2>');
+        document.write('<ul>');
+        for(let i = 0; i < notas.length; i++){
+            document.write('<li>Nota ' + (i+1) + ': ' + notas[i] + '</li>');
+        }
+        document.write('</ul>');
+        document.write('<h3>Média final: ' + media + '</h3>');
+    </script>
+</head>
+<body>
+</body>
+</html>
