@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas de condição</title>
+
+    <script>
+        const n1 = Number(prompt("Digite a primeira nota: "))
+        const n2 = Number(prompt("Digite a segunda nota: "))
+        const n3 = Number(prompt("Digite a terceira nota: "))
+        const n4 = Number(prompt("Digite a quarta nota: "))
+
+        const media = (n1 + n2 + n3 + n4) / 4
+        console.log("A média final é " + media)
+
+        // Usando operador ternário
+        media >= 7 ? console.log("Aprovado") : console.log("Reprovado")
+
+        // Também exibindo na tela
+        document.write(`<h2>A média final é ${media.toFixed(2)}</h2>`)
+        document.write(media >= 7 ? "<p style='color:green'>Aprovado</p>" : "<p style='color:red'>Reprovado</p>")
+    </script>
+</head>
+<body>
+</body>
+</html>
