@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleitores</title>
+    <script>
+        // Entrada
+        const anoVotacao = Number(prompt('Digite o ano da Eleição: '))
+        const anoNascimento = Number(prompt('Digite o ano do seu nascimento: '))
+
+        // Processamento
+        const idade = anoVotacao - anoNascimento
+
+        if (idade < 16) {
+            console.log('Não eleitor')
+        } else if ((idade >= 16 && idade < 18) || (idade > 65)) {
+            console.log('Eleitor facultativo')
+        } else {
+            console.log('Eleitor obrigatório')
+        }
+    </script>
+</head>
+<body>
+</body>
+</html>
